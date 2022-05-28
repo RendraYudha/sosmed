@@ -1,33 +1,103 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="2;url=my/whatsapp.html">
-    <title>Rendra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <style type="text/css">
-      .garis_verikal{
-        border-left: 1px black solid;
-        height: 170px;
-        width: 0px;
-        display: inline-block;
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/css">
+  	body {
+  		font-family: 'Inter', sans-serif;
+  	}
+  </style>
+  <style type="text/tailwindcss">
+	@layer utilities {
+	  body {
+	  font-family: 'Inter', sans-serif;
+	  }
+	}
+  </style>
+  <title>Rendra's Blog</title>
+    <script>
+    tailwind.config = {
+      theme: {
+      	container: {
+      		center: true,
+      		padding: '16px',
+      	},
+        extend: {
+          colors: {
+            primary: '#14b8a6',
+            secondary: '#64748b',
+            dark: '#0f172a',
+          },
+          screens: {
+          	'2xl': '1320px',
+          }
+        }
       }
-    </style>
-  </head>
-  <body>
-  	<div class="container-fluid text-center" style="border: 1px solid black;">
-  		<h1>Soon</h1>
-		<p>There is no content available. You will be redirected to WhatsApp page</p>
-      <!-- <a href="his/whatsapp.html">WhatsApp</a>
-      <div>Instagram</div>
-      <div>Twitter</div>
-      <div class="garis_vertikal"></div> -->
-  		<!-- <div class="d-flex align-items-center">
-		  <strong>Loading...</strong>
-		  <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div> -->
+    }
+  </script>
+</head>
+<body>
+  
+	<!-- Header start -->
+	<header></header>
+	<!-- Header end -->
+
+	<!-- Hero section start -->
+	<section id="home" class="pt-36">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<div class="w-full self-center px-4 lg:w-1/2">
+					<h1 class="text-base font-bold text-primary md:text-xl">Halo semua, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Rendra Yudha Adi Kalla</span></h1>
+					<h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student at SMA Hang Tuah 2 Sidoarjo</h2>
+					<p class="font-medium text-secondary mb-10 leading-relaxed">Lorem ipsum dolor sit amet</p>
+
+					<a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi saya</a>
+				</div>
+				<div class="w-full self-end px-4 lg:w-1/2">
+					<div class="relative mt-10 lg:mt-9 lg:right-0">
+						<img src=".png" alt="Foto profil" class="max-w-full mx-auto">
+						<span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+							<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  								<path fill="#14b8a6" d="M59.2,-12.9C68.4,9,61.7,42.4,41.1,57.7C20.4,73,-14.2,70.1,-38.3,52.7C-62.3,35.2,-75.7,3.1,-67.6,-17.4C-59.4,-37.9,-29.7,-46.8,-2.3,-46.1C25,-45.3,50,-34.8,59.2,-12.9Z" transform="translate(100 100) scale(1.1)" />
+							</svg>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
-  	</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+	</section>
+	<!-- Hero section end -->
+
+	<!-- About section start -->
+	<section id="about" class="pt-36 pb-32">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<div class="w-full px-4 mb-10 lg:w-1/2">
+					<h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+					<h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Sekilas</h2>
+					<p class="font-medium text-base text-secondary max-w-xl lg:text-lg">ejnen ehf efef293jr23j2 22 f92ef efhuefnefef fhqff foejfwoe fwefwe fejfie fuef ef.</p>
+				</div>
+				<div class="w-full px-4 lg:w-1/2">
+					<h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Media Sosial</h3>
+					<p class="font-medium text-base text-secondary mb-6 lg:text-lg">ejnen ehf efef293jr23j2 22 f92ef efhuefnefef fhqff foejfwoe fwefwe fejfie fuef ef.</p>
+					<div class="flex items-center">
+						<!-- Instagram -->
+						<a href="https://instagram.com/rarendradi" target="_blank"  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+							<svg role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instacart</title><path d="M15.629 9.619c1.421 1.429 2.58 3.766 1.917 5.152-1.778 3.715-15.04 10.226-16.169 9.1C.252 22.746 6.768 9.476 10.481 7.697c1.388-.66 3.724.51 5.152 1.92l-.005.014v-.012zm7.028-1.566c-.231-.855-.821-1.717-1.7-1.82-1.61-.186-4.151 2.663-3.971 3.339.181.69 3.766 1.875 5.1.915.691-.494.781-1.56.556-2.414l.015-.02zM17.666.158c1.198.324 2.407 1.148 2.551 2.382.261 2.259-3.732 5.819-4.68 5.564-.948-.251-2.618-5.284-1.269-7.162.695-.972 2.201-1.106 3.399-.788v.004h-.001z"/></svg>
+
+						<!-- Instagram -->
+						<!-- <a href="https://instagram.com/rarendradi" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"> -->
+							<!-- <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instacart</title><path d="M15.629 9.619c1.421 1.429 2.58 3.766 1.917 5.152-1.778 3.715-15.04 10.226-16.169 9.1C.252 22.746 6.768 9.476 10.481 7.697c1.388-.66 3.724.51 5.152 1.92l-.005.014v-.012zm7.028-1.566c-.231-.855-.821-1.717-1.7-1.82-1.61-.186-4.151 2.663-3.971 3.339.181.69 3.766 1.875 5.1.915.691-.494.781-1.56.556-2.414l.015-.02zM17.666.158c1.198.324 2.407 1.148 2.551 2.382.261 2.259-3.732 5.819-4.68 5.564-.948-.251-2.618-5.284-1.269-7.162.695-.972 2.201-1.106 3.399-.788v.004h-.001z"/></svg> -->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About section end -->
+
+</body>
 </html>
