@@ -3,16 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="2;url=https://wa.me/6285960551092">
+    <meta http-equiv="refresh" content="2;url=https://wa.me/6285731552077">
     <title>Rendra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: ;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #ffff;
+    }
+
+    .loader {
+      position: relative;
+    }
+
+    .loader::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      animation: blinkCursor 0.8s steps(3) infinite;
+    }
+
+    @keyframes blinkCursor {
+      0%,75% {
+        opacity: 1;
+      },
+      76%,100% {
+        opacity: 0;
+      }
+    }
+
+    .loader h4 {
+      position: relative;
+      color: #000;
+      letter-spacing: 5px;
+      font-size: 4em;
+      text-transform: uppercase;
+      animation: typing 8s steps(22) infinite;
+      overflow: hidden;
+    }
+
+    @keyframes typing {
+      0%,90% {
+        width: 0;
+      }
+      30%,60% {
+        width: 401.88px;
+      }
+    }
+
+  </style>
   <body>
-  	<div class="container d-flex mx-auto my-auto" style="vertical-align: middle;">
+  <body>
+	<div class="loader">
+      	  <h4>Sek, Lur. Entenono ...</h4>
+    	</div>
+<!--   	<div class="container d-flex mx-auto my-auto" style="vertical-align: middle;">
 	  <div class="spinner-border ms-auto d-block" role="status" aria-hidden="true" style="width: 100%; height: 100vh; position: fixed; z-index: 100;"></div>
       	  <br>
           <strong class="ms-auto d-block">Sek, Lur. Entenono ...</strong>
-  	</div>
+  	</div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
