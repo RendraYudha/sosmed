@@ -2,7 +2,7 @@
   "greeting": "Heyoo,",
   "name": "Cecilia!",
   "greetingText": "Your long name is too long, btw :'v",
-  "wishText": "may allah bless your life in your seventeen",
+  "wishText": "may Allah bless your life in your seventeen",
   "imagePath": "img/cecilia.png",
   "text1": "It's your birthday!!! :D",
   "textInChatBox": "Happy birthday to you!! Yeee! Many many happy blah...",
@@ -19,5 +19,5 @@
   "wishHeading": "Happy Birthday!",
   "outroText": "Okay, now come back and tell me if you liked it.",
   "replayText": "Or click, if you want to watch it again.",
-  "outroSmiley": "Made with love by @rarendradi"
+  "outroSmiley": "Made with love by <a href="instagram.com/rarendradi">@rarendradi</a>"
 }
